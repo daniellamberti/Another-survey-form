@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css"/>
+        <title>survey-form.freecodecamp</title>
+    </head>
+    <body>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form id="survey-form">
+            <fieldset class="first-fieldset">
+                <legend>Personal Data</legend>
+                <label id="name-label" for id="name">Name<input id="name" type="text" name="name" 
+                    placeholder="Enter your name" / required></label>
+                <label id="email-label" for id="email">Email<input id="email" type="email" name="email" 
+                    placeholder="Enter your email" / required></label>
+                <label id="number-label" for id="number">Age (optional) <input id="number" type="number" min="10" max="100"name="name" 
+                    placeholder="Enter your age" / required></label>
+            </fieldset>
+
+            <fieldset class="second-fieldset">
+                <legend>Which option best describes your current role?</legend>
+                    <select id="dropdown">
+                        <option>select current role</option>
+                        <option>Student</option>
+                        <option>Full Time Job</option>
+                        <option>Full Time Learner</option>
+                        <option>Prefer not to say</option>
+                        <option>Other</option>
+                    </select>
+            </fieldset>
+
+            <fieldset class="third-fieldset">
+                <legend>Would you recommend freeCodeCamp to a friend?</legend>
+                    <input id="1" type="radio" name="attribute" value="attribute" checked /><label for="1">Definitely</label>
+                    <input id="2" type="radio" name="attribute" value="attribute" /><label for="1">Maybe</label>
+                    <input id="3" type="radio" name="attribute" value="attribute" /><label for="1">Not sure</label>
+            </fieldset>
+
+            <fieldset class="fourth-fieldset">
+                <legend>Which option best describes your current role?</legend>
+                    <select id="dropdown">
+                        <option>select an option</option>
+                        <option>Challenges</option>
+                        <option>Projects</option>
+                        <option>Community</option>
+                        <option>Open source</option>
+                    </select>
+            </fieldset>
+
+            <fieldset class="fifth-fieldset">
+                <legend>What would you like to see improved? (Check all that apply)</legend>
+                <label for="one"><input id="one" type="checkbox" value="attribute" checked/> Front-End Projects</label>
+                <label for="two"><input id="two" type="checkbox" value="attribute"/> Back-End Projects</label>
+                <label for="three"><input id="three" type="checkbox" value="attribute"  /> Data Visualization</label> 
+                <label for="four"><input id="four" type="checkbox" value="attribute"  /> Challenges</label>
+                <label for="five"><input id="five" type="checkbox" value="attribute"  /> Open Source Communities</label>
+                <label for="six"><input id="six" type="checkbox" value="attribute"  /> GitterhHelp rooms</label>
+                <label for="seven"><input id="seven" type="checkbox" value="attribute"  /> Videos</label>
+                <label for="eight"><input id="eight" type="checkbox" value="attribute"  /> City MeetUps</label>
+                <label for="nine"><input id="nine" type="checkbox" value="attribute"  /> Wiki</label>
+                <label for="ten"><input id="ten" type="checkbox" value="attribute"  /> Forum</label>
+                <label for="eleven"><input id="eleven" type="checkbox" value="attribute" /> Additional Courses</label>
+            </fieldset>
+
+            <fieldset class="sixth-fieldset">
+                <legend>Any comments or suggestions?</legend>
+                <textarea rows="7" cols="30" placeholder="Enter your comments here ..."></textarea>
+            </fieldset>
+
+            <input id="submit" type="submit" value="Submit" />
+
+        </form>
+    </body>
+</html>
